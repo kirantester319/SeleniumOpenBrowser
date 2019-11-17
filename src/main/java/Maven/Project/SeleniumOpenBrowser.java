@@ -9,6 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -23,7 +24,7 @@ public class SeleniumOpenBrowser {
 	
 	{
 		System.setProperty("webdriver.chrome.driver", "F:/SetUps/chromedriver2.exe");
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver();
 		
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
