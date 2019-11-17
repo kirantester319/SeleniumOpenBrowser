@@ -9,6 +9,7 @@ import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
@@ -83,10 +84,11 @@ public class Amazon {
 		
 		int widthimg= element.getSize().getWidth();
 		Thread.sleep(10000);
-		Actions act = new Actions(driver);
 		
-		act.moveByOffset(1558, 2075).build().perform();
 		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		
+		js.executeScript("window.ScrollBy(1560,2076");
 		
 		
 		
